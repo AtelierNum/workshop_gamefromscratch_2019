@@ -25,8 +25,8 @@ class Bonus2 {
     x = x + .01;
     y = y + .01;
 
-    xpos = xpos + map(noise(x), 0, 1, -35, 35);
-    ypos = ypos + map(noise(y), 0, 1, -35, 35);
+    xpos = xpos + map(noise(x), 0, 1, -8, 8);
+    ypos = ypos + map(noise(y), 0, 1, -8, 8);
   }
 
   void deplacement() {

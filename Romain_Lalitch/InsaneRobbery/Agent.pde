@@ -28,8 +28,8 @@ class Agent {
     x = x + .01;
     y = y + .01;
 
-    xpos = xpos + map(noise(x), 0, 1, -25, 25);
-    ypos = ypos + map(noise(y), 0, 1, -25, 25);
+    xpos = xpos + map(noise(x), 0, 1, -5, 5);
+    ypos = ypos + map(noise(y), 0, 1, -5, 5);
   }
 
 //fonction gérant l'aspect graphique, la position et les dimentions des Agents

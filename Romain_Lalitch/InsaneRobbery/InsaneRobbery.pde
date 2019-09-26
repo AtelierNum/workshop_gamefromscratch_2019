@@ -92,13 +92,13 @@ void setup() {
   levels = new ArrayList<Level>();
 
   //instenciation des différents niveaux avec les paramètres à rentrer pour choisir la vitesse d'apparition des Ennemies, leurs dégats et le score à atteindre pour passer au niveau suivant 
-  levels.add(new Level( 45, 1, 10));
+  levels.add(new Level( 90, 1, 10));
   currentLevel = levels.get(currentlevelID);
-  levels.add(new Level( 40, 1, 25 ));
-  levels.add(new Level( 35, 1, 45));
-  levels.add(new Level( 35, 2, 60));
-  levels.add(new Level( 30, 2, 80));
-  levels.add(new Level( 25, 3, 105));
+  levels.add(new Level( 80, 1, 25 ));
+  levels.add(new Level( 70, 1, 45));
+  levels.add(new Level( 70, 2, 60));
+  levels.add(new Level( 60, 2, 80));
+  levels.add(new Level( 50, 3, 105));
 
   imageBanque = loadImage("Images/imageBanque.gif");
   liasse = loadImage("Images/liasse.png");
@@ -116,7 +116,7 @@ void setup() {
   musique.loop();
 
   //une fois le programme lancé, il tourne à 60 images par secondes
-  frameRate(240);
+  //frameRate(240);
 }
 
 
@@ -209,7 +209,7 @@ void trainee() {
 //elle gère aussi le fait qu'ils disparaissent et fassent un son lorsque l'on passe dessus
 //si on en récupère un, le score augmente de 1 point 
 void agents() {
-  if (frameCount%30 == 0) {
+  if (frameCount%60 == 0) {
     for (int i=0; i<1; i++) {
       bille.add(new Agent(random(width), random(height)));
     }
@@ -258,7 +258,7 @@ void mechants() {
 //ici, lorsque le bonus est prit, la taille de notre Ball grossit
 //au bout de 300 images, sa taille redevient normale
 void bonus() {
-  if (frameCount%300 == 0) {
+  if (frameCount%900 == 0) {
     for (int i=0; i<1; i++) {
       onus.add(new Bonus1(random(width), random(height)));
     }
@@ -276,7 +276,7 @@ void bonus() {
     }
   }
   if (bonus == true) {
-    if (frameCount% 120==0) {
+    if (frameCount% 300==0) {
       bonus = false;
     }
   }
@@ -297,7 +297,7 @@ void bonus() {
 //ici, si le score gagné aléatoirement dépasse 3, on perd une vie
 void bonus2() {
 
-  if (frameCount%120 == 0) {
+  if (frameCount%450 == 0) {
     for (int i=0; i<1; i++) {
       bonus2.add(new Bonus2(random(width), random(height)));
     }
@@ -324,7 +324,7 @@ void bonus2() {
 //elle gère aussi le fait qu'ils disparaissent et fassent un son lorsque l'on passe dessus
 void bonus3() {
 
-  if (frameCount%500 == 0) {
+  if (frameCount%1500 == 0) {
     for (int i=0; i<1; i++) {
       bonus3.add(new Bonus3(random(width), random(height)));
     }
@@ -440,29 +440,32 @@ void indicScore() {
   fill(255);
   textAlign(TOP, RIGHT);
   textSize(25);
+  String s = "Score à atteindre : ";
   nivSuivant = currentLevel.score ;
   if (currentlevelID == 0) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+   
+    
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 
   if (currentlevelID == 1) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 
   if (currentlevelID == 2) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 
   if (currentlevelID == 3) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 
   if (currentlevelID == 4) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 
   if (currentlevelID == 5) {
-    text("Score à atteindre : " +nivSuivant, 1600, 40);
+    text("Score à atteindre : " +nivSuivant, width- textWidth(s + nivSuivant), 40);
   }
 }
 
