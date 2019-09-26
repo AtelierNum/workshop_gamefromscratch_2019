@@ -1,0 +1,7 @@
+Afin que le code du jeu puisse marcher correctement, veuillez télégarger la librairie de son Minim.
+
+Vous la trouverez en allant dans l'onglet Sketch --> Importer une librairie --> Ajouter une librairie,
+et en cherchant Minim dans la barre de recherche.
+
+J'ai utilisé Minim afin de fluidifier la vitesse du jeu et la qualité des sons car j'avais rencontré 
+des problèmes sonores lorque j'ai utilisé la librairie Sound de Processing.

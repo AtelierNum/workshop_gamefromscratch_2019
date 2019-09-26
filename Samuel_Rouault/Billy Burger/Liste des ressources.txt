@@ -1,0 +1,8 @@
+Fichier textes qui listes les ressources que je n'est pas fait.
+
+Bruitages audio:
+sound-fishing 
+
+Ressources graphique
+Background "Designed by dashu83 / Freepik"
+Fond pour la jaquette "Designed by Freepik"
