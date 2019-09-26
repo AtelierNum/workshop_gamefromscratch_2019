@@ -41,7 +41,7 @@ Instructions available to students can be found [here](https://github.com/b2reng
 <img src="Jade_Guilbot/gif.gif" width="480" /><br>
 
 ## Albane Herry
-<img src="Albane_Herry/jaquette1.jpg" width="480" />
+<img src="Albane_Herry/jaquette1.jpg" width="480" /><br>
 <img src="Albane_Herry/jaquette2.jpg" width="480" /><br>
 <img src="Albane_Herry/gif.gif" width="480" /><br>
 
@@ -55,7 +55,7 @@ Instructions available to students can be found [here](https://github.com/b2reng
 
 ## Gabriel Hardy   
 <img src="Gabriel_Hardy/jaquette.jpg" width="480" /><br>
-<img src="Gabriel_Hardy/output.gif" width="480" /><br>
+<img src="Gabriel_Hardy/gif.gif" width="480" /><br>
 
 ## Guillaume Carle  
 <img src="Guillaume_Carle/jaquette.jpg" width="480" /><br>
